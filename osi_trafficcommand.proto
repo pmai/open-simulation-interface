@@ -53,5 +53,15 @@ message TrafficCommand
 //
 message TrafficAction
 {
+    // Action to be taken
+    //
+    oneof action {
+        AcquireGlobalPositionAction acquire_global_position_action = 1;
+    }
+}
 
+message AcquireGlobalPositionAction {
+    // Position and orientation relative to the global coordinate system.
+    //
+    optional Position6d position = 1;
 }
