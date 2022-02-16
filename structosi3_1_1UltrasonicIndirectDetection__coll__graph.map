@@ -1,0 +1,4 @@
+<map id="osi3::UltrasonicIndirectDetection" name="osi3::UltrasonicIndirectDetection">
+<area shape="rect" id="node2" href="$structosi3_1_1Identifier.html" title="A common identifier (ID), represented as an integer. " alt="" coords="8,133,123,159"/>
+<area shape="rect" id="node4" href="$structosi3_1_1Vector3d.html" title="A cartesian 3D vector for positions, velocities or accelerations or its uncertainties. " alt="" coords="340,133,455,159"/>
+</map>
