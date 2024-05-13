@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">open_simulation_interface
-   &#160;<span id="projectnumber">master (d00b974)</span>
+   &#160;<span id="projectnumber">master (7c9529f)</span>
    </div>
   </td>
  </tr>
@@ -201,6 +201,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The interface version used by the sender (simulation environment). </p>
+<dl class="section user"><dt>Rules\n\code{.unparsed}</dt><dd>is_set  </dd></dl>
 
 </div>
 </div>
@@ -218,7 +219,8 @@ Public Attributes</h2></td></tr>
 
 <p>The ID of the sensor at host vehicle's mounting_position. </p>
 <p>This is the ID of the virtual sensor, to be used in its detected object output; it is distinct from the IDs of its physical detectors, which are used in the detected features.</p>
-<p>The ID is to be provided by the environment simulation, the sensor model is not in a position to provide a useful default value. </p>
+<p>The ID is to be provided by the environment simulation, the sensor model is not in a position to provide a useful default value.</p>
+<dl class="section user"><dt>Rules\n\code{.unparsed}</dt><dd>is_set  </dd></dl>
 
 </div>
 </div>
@@ -350,7 +352,7 @@ A default position can be provided by the sensor model (e.g. to indicate the pos
 </div><div class="memdoc">
 
 <p>Initial update cycle offset of the sensor model. </p>
-<p>This specifies the initial offset (i.e. initial delay) of the sensor model update cycle that the simulation should take into account. It is defined against a simulation start time of 0: i.e. an initial offset of 0.008s would mean, that the initial update of sensor input data to the model should occur at 0+0.008s, and then update_cycle_time after that, etc. If the simulation start time of the simulation is non-zero, then the offset still has to be interpreted against a 0 start time, and not simply added on top of the start time: e.g. if the simulation starts at 0.030s, and the update cycle time is 0.020s, then the first update to the sensor input should happen at 0.048s, or 0.018s after simulation start. This convention is needed to ensure stable phase position of the offset in the case of changing simulation start times, e.g. for partial resimulation.</p>
+<p>This specifies the initial offset (i.e. initial delay) of the sensor model update cycle that the simulation should take into account. It is defined against a simulation start time of 0: i.e. an initial offset of 0.008s would mean, that the initial update of sensor input data to the model should occur at 0+0.008s, and then update_cycle_time after that, etc. If the simulation start time of the simulation is non-zero, then the offset still has to be interpreted against a 0 start time, and not simply added on top of the start time: e.g. if the simulation starts at 0.030s, and the update cycle time is 0.020s, then the first update to the sensor input should happen at 0.048s, or 0.018s after simulation start. This convention is needed to ensure stable phase position of the offset in the case of changing simulation start times, e.g. for partial re-simulation.</p>
 <p>Unit: s </p>
 
 </div>
@@ -386,7 +388,8 @@ A default position can be provided by the sensor model (e.g. to indicate the pos
 </div><div class="memdoc">
 
 <p>Omit Static Information. </p>
-<p>This flag specifies whether <code><a class="el" href="structosi3_1_1GroundTruth.html" title="The ground truth information from the simulation environment.">GroundTruth</a></code> information that was already provided using a GroundTruthInit parameter at initialization time shall be omitted from the <code><a class="el" href="structosi3_1_1SensorView.html" title="The sensor view is derived from GroundTruth and used as input to sensor models.">SensorView</a></code> ground truth information. </p>
+<p>This flag specifies whether <code><a class="el" href="structosi3_1_1GroundTruth.html" title="The ground truth information from the simulation environment.">GroundTruth</a></code> information that was already provided using a GroundTruthInit parameter (e.g. <a href="https://opensimulationinterface.github.io/osi-antora-generator/asamosi/latest/sensor-model/spec/ground_truth_init_parameters.html">OSMP GroundTruthInit</a>) at initialization time shall be omitted from the <code><a class="el" href="structosi3_1_1SensorView.html" title="The sensor view is derived from GroundTruth and used as input to sensor models.">SensorView</a></code> ground truth information.</p>
+<p>Setting the <code><a class="el" href="structosi3_1_1SensorViewConfiguration.html#a124ebfbab7292e8ab9b99fd70d41d797" title="Omit Static Information.">omit_static_information</a></code> field allows a clear split between the dynamic simulation data, which is contained in ground truth messages with the <code><a class="el" href="structosi3_1_1SensorViewConfiguration.html#a124ebfbab7292e8ab9b99fd70d41d797" title="Omit Static Information.">omit_static_information</a></code> flag, and the static simulation data, which is contained in the (OSMP) GroundTruthInit. </p>
 
 </div>
 </div>

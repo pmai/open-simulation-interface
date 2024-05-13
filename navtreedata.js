@@ -26,10 +26,9 @@ var NAVTREE =
 [
   [ "open_simulation_interface", "index.html", [
     [ "Open Simulation Interface (OSI)", "index.html", [
-      [ "Usage", "index.html#autotoc_md11", null ],
-      [ "Installation", "index.html#autotoc_md12", null ]
+      [ "Usage", "index.html#autotoc_md13", null ],
+      [ "Installation", "index.html#autotoc_md14", null ]
     ] ],
-    [ "Todo List", "todo.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -47,14 +46,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"structosi3_1_1DetectedItemHeader.html",
-"structosi3_1_1GroundTruth.html#ad7f6468e1983b67adfbb4e0d3cf19b7b",
-"structosi3_1_1LidarSensorViewConfiguration.html#a712772005038f231b056111be45fc13c",
-"structosi3_1_1MovingObject_1_1VehicleClassification.html#a895d31955ea81f96e05983d41d4cc9d6",
-"structosi3_1_1SensorViewConfiguration.html#a77b0315e478c632f88e50c63b06030f4",
-"structosi3_1_1TrafficLight_1_1Classification.html#ae107846d88eaa3dab95d3d931d73fa09a692f8d8290015c4e515ca4eec9fb622d",
-"structosi3_1_1TrafficSign_1_1MainSign_1_1Classification.html#af4bea9cfaada82922c78d06dff73b88dac0ecab2b762fcd142736fc0bd7fe02de",
-"structosi3_1_1UltrasonicSpecificObjectData.html#a74c14595948c2dd7dba6f2efcaea15ad"
+"structosi3_1_1ColorRGBIR.html",
+"structosi3_1_1GeodeticPosition.html#ab0f61f18ce97fcee2fdca13be41afe72",
+"structosi3_1_1LidarDetection.html#a2da76e398f267b78133ce83fc66bd883",
+"structosi3_1_1MovingObject_1_1VehicleAttributes_1_1WheelData.html#a2095585cdc9eb8968fe576af7c43d5a3",
+"structosi3_1_1SensorData_1_1VirtualDetectionArea.html",
+"structosi3_1_1TrafficCommand.html#a3a1c42d3330cfe402429e57a6b6125d8",
+"structosi3_1_1TrafficSign_1_1MainSign_1_1Classification.html#af4bea9cfaada82922c78d06dff73b88da7afd9277975aed7c2082e7c575c2d176",
+"structosi3_1_1TrafficSign_1_1SupplementarySign_1_1Classification_1_1Arrow.html#a307edf67719e584c848087fa94ddce2ba445e59eb5d7b9dbc22935aaedc55de2d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
